@@ -1,0 +1,19 @@
+{
+  "name": "mcd-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "chirag pipaliya",
+  "license": "ISC",
+  "bin": "./app.js",
+  "dependencies": {
+    "chalk-pipe": "^4.0.0",
+    "cmdify": "^0.0.4",
+    "inquirer": "^7.3.3",
+    "js-beautify": "^1.13.0"
+  }
+}
