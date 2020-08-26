@@ -206,7 +206,11 @@ function writeFile() {
   const ${SchemaName}Schema = new Schema ({
       ${results.map((result) => {
         return `${result.field_name}:{
-                      type:${result.type},
+                      type:${
+                        result.type === "ObjectId"
+                          ? `Schema.Types.ObjectId`
+                          : result.type
+                      },
                       ${result.type2.map((type) => {
                         switch (type) {
                           case "required":
@@ -236,7 +240,7 @@ function writeFile() {
                           case "max":
                             return `max:${result.max}\n`;
                           case "ref":
-                            return `ref:Schema.Types.${result.ref}\n`;
+                            return `ref:"${result.ref}"\n`;
                         }
                       })}
                   }`;

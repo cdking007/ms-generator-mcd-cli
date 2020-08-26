@@ -1,7 +1,7 @@
 {
-  "name": "mcd-cli",
+  "name": "@chiragdp/mcd-cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "mongoose schema generator tool",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,11 +9,22 @@
   "keywords": [],
   "author": "chirag pipaliya",
   "license": "ISC",
-  "bin": "./app.js",
+  "bin": {
+    "mcd-cli": "app.js"
+  },
   "dependencies": {
     "chalk-pipe": "^4.0.0",
     "cmdify": "^0.0.4",
     "inquirer": "^7.3.3",
     "js-beautify": "^1.13.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdking007/ms-generator-mcd-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cdking007/ms-generator-mcd-cli/issues"
+  },
+  "homepage": "https://github.com/cdking007/ms-generator-mcd-cli#readme"
 }
